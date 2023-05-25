@@ -8,11 +8,11 @@ const port = 3000;
 const route = require('./routes');
 // var assetsPath = path.join(__dirname, 'public');
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.use(
     express.urlencoded({
-                     extended: true,
+              extended: true,
     }),
 );
 app.use(express.json());
